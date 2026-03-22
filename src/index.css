@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  /* Forzamos a que toda la aplicación use la fuente infantil y un fondo cálido */
+  html, body {
+    font-family: 'Nunito', system-ui, sans-serif;
+    background-color: #f5f5f4; /* stone-50: Un beige muy suave y cálido */
+    color: #292524; /* stone-800 */
+  }
+
+  /* Suavizamos las barras de desplazamiento para que no se vean tan toscas */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d6d3d1; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8a29e; 
+  }
+}
